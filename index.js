@@ -7,7 +7,7 @@ const app = express();
 
 app
 .use(bodyParser.json())
-.get("/rooms", (req, res)=>{                        //Fetches all the Halls
+.get("/", (req, res)=>{                        //Fetches all the Halls
     res.status(200).json({
         data:RoomsData
     })
